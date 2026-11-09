@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration & Workshop Schedule Portal</title>
+</head>
+<body>
+
+    <header>
+        <h1>Nexora Tech Summit 2026</h1>
+
+        <p> Registration & Workshop Schedule Portal</p>
+    </header>
+
+    <main>
+    <section id="registration">                                         
+     <h2>Attendee Registration</h2>                                   
+     <form action="/register" method="POST">  
+        <label for="username" title="username">Enter your username:</label>
+        <input type="text" id="username" placeholder="Username" required>
+     </br>
+     </br>
+        <label for="email" title="email">Enter your email:</label>
+        <input type="email" id="email" placeholder="Email" required>
+     </br>
+     </br>
+     <label for="workshop" title="workshop">Chose your workshop track:</label>
+     <select id="workshop">
+        <option value="" selected disabled>Select a workshop</option>
+        <option>Artificial Intelligence & Machine Learning</option>
+        <option>Software Development & Web Technologies</option>
+        <option>Cybersecurity & Network Engineering</option>
+     </select>
+
+     </br>
+     </br>
+
+     <label title="Attendance">Attendance Mode:</label>
+     <label for="in-person" title="in-person">In-Person</label>
+        <input type="radio" id="in-person" name="attendance" value="in-person">
+     <label for="virtual" title="virtual">Virtual</label>
+        <input type="radio" id="virtual" name="attendance" value="virtual">
+     
+     </br>
+     </br>
+
+     <textarea placeholder="write down your notes" title="your thouths"></textarea>
+
+     </br>
+     </br>
+
+     <h2>Terms & Conditions</h2>
+     <p>By registering for Nexora Tech Summit 2026, participants agree to provide accurate and complete personal information, follow the event schedule, and comply with all instructions provided by the organizers. All participants must treat speakers, organizers, and fellow attendees with respect, maintain professional behavior, and contribute to a welcoming, inclusive, and collaborative learning environment. Harassment, discrimination, bullying, offensive language, or any form of disruptive behavior will not be tolerated. Participants must respect the privacy of others and must not share personal information, photographs, videos, or recordings of other attendees without their permission. All workshop materials, presentations, documents, and resources provided during the event are intended for educational purposes and may not be copied, redistributed, published, or used for commercial purposes without the appropriate authorization. Participants are responsible for bringing their own laptops and any necessary equipment required for the workshops, unless otherwise specified by the organizers. All attendees must use the event's facilities and technical resources responsibly and must not attempt to access unauthorized systems, networks, or private information. Participants are expected to arrive on time, attend their selected workshops, and notify the organizers if they are unable to participate in a scheduled activity. Registration does not guarantee access to every workshop, as some sessions may have limited capacity. The organizers reserve the right to modify the event schedule, speakers, workshop content, or venue when necessary and will communicate significant changes to registered participants whenever possible. Participants understand that the organizers are not responsible for personal belongings that are lost, damaged, or stolen during the event. By completing the registration process, participants confirm that they have read, understood, and agreed to these terms and conditions and acknowledge that failure to follow the rules may result in removal from the event without a refund of any applicable fees.
+</p>
+     <label for="terms"><strong>I agree to the Code of Conduct</strong></label>
+     <input type="checkbox" id="terms" required>
+
+     </br>
+     </br>
+
+     <button type="submit" title="submit">Submit</button>
+     <button type="reset" title="reset">Reset</button>
+     </form>
+    </section>
+
+    </br>
+     </br>
+     </br>
+     </br>
+
+     <section id="schedule-matrix">
+
+        <h2>Workshop Matrix & Pricing</h2>
+
+     <table>
+        <caption><strong>Schedule & Track Pricing Matrix</strong> </caption>
+        <thead>
+            <tr>
+                <th>|Time|</th>
+                <th>|Session Topic|</th>
+                <th>|Room|</th>
+                <th>|Instructor|</th>
+                <th>|Pricing|</th>
+            </tr>
+        </thead>
+
+        <tbody> 
+            <tr>
+                <th scope="row">||09:00 AM – 10:00 AM||</th>
+                <td>||Introduction to Artificial Intelligence||</td>
+                <td>||Room A101||</td>
+                <td>||Dr. Emily Carter||</td>
+                <td>||Free||</td>
+            </tr>
+
+            <tr>
+                <th scope="row">||10:15 AM – 11:15 AM||</th>
+                <td>||Modern Web Development||</td>
+                <td>||Room B204||</td>
+                <td>||Alex Morgan||</td>
+                <td>||Free||</td>
+            </tr>
+
+            <tr>
+                <th scope="row">||11:30 AM – 12:30 PM||</th>
+                <td>||Cybersecurity & Ethical Hacking||</td>
+                <td>||Room C105||</td>
+                <td>||Daniel Foster||</td>
+                <td>||Free||</td>
+            </tr>
+
+            <tr>
+                <th scope="row">||01:30 PM – 02:30 PM||</th>
+                <td>||Machine Learning Fundamentals||</td>
+                <td>||Room A101||</td>
+                <td>||Sophia Bennett||</td>
+                <td>||Free||</td>
+            </tr>
+
+            <tr>
+                <th scope="row">||02:45 PM – 03:45 PM||</th>
+                <td>||Software Engineering & Design Patterns||</td>
+                <td>||Room B204||</td>
+                <td>||James Wilson||</td>
+                <td>||Free||</td>
+            </tr>
+
+            <tr>
+                <th scope="row">||04:00 PM – 05:00 PM||</th>
+                <td>||The Future of Computer Science||</td>
+                <td>||Main Hall||</td>
+                <td>||Olivia Parker||</td>
+                <td>||Free||</td>
+            </tr>
+
+            <tfoot>
+                <tr>
+                    <td colspan="5">Free admission to all sessions, access to workshop materials,
+                         networking opportunities with instructors, and a certificate of participation.</td>
+                </tr>
+            </tfoot>
+        </tbody>
+     </table>
+     </section>
+    </main>
+
+    <footer> <p>© 2026 Global Developer Summit. All rights reserved.</p></footer>  
+</body>
+</html>
